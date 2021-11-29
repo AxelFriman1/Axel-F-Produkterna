@@ -1,0 +1,209 @@
+/* Gör ändringar på min body så att den får en vit bakgrundsfärg */
+body {
+    margin: 0;
+    background-color: white;
+}
+/* Ändrar så att hela sidan har en margin och padding på 0 */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* Skapar en navbar som stannar i position (fixerad) */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Ändrar så att alla li element lägger sig horisontellt åt vänster*/
+  li {
+    float: left;
+  }
+  /* För alla a element i ett li element gör jag ändringar på den */
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  } 
+  
+  /* Jag gör så att när man hovrar med muspekaren över ett a element
+  i ett li element så ändrar det färg*/
+  li a:hover {
+    background-color: #111;
+  }
+
+  /* Skapar en class som jag använder till att när man är på en sida
+  så färgas den sidan grön i navbaren */
+  .active
+  {
+      background-color: green;
+  }
+
+  /* Skapar en style för min rubrik på sidan */
+  .heading {
+   margin-top: 10%;
+   font-family: monospace;
+   text-align: center;
+   margin-bottom: 50px;
+  }
+ /* Skapar en container för mina produkter */
+  div.product-container {
+      display: flex;
+      justify-content: space-evenly;
+  }
+/* Skapar en layout för mina produkter */
+   div.product {
+    margin: 25px;
+    border: 1px solid #ccc;
+    width: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  /* Gör så att när man håvrar över produkterna så ändras ramen färg */
+  div.product:hover {
+    border: 1px solid #777;
+  }
+  /* Ändrar bredden och höjden på bilden på produkten */
+  div.product img {
+    width: 100%;
+    height: auto;
+  }
+  /* Gör så att texten lägger sig i mitten på mina produkter */
+  div.description {
+    padding: 15px;
+    text-align: center;
+  }
+  /* Skapar en container för mina popup produkter */
+ .popup-container {
+     display: flex;
+     justify-content: space-around;
+ }
+/* Skapar en layout på en knapp som jag använder till att göra
+en popup på en knapp*/
+.button {
+    color: #111;
+    text-decoration: none;
+}
+/* Skapar en layout så att när man klickar på en produkt så poppar den upp
+på skärmen */
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: none;
+}
+/* Gör så att när att när man har klickat på en produkt så blir
+popup aktiv och då så displayas min popup class */
+.popup:target {
+    display: block;
+}
+/* Skapar en layout för produkt1 när den poppas upp på skärmen */
+#product1 .popup-content {
+    width: 350px;
+    height: 600px;
+    margin: 100px auto;
+    position: relative;
+    border: 5px solid #111;
+}
+/* Skapar en layout för produkt2 när den poppas upp på skärmen */
+#product2 .popup-content {
+    width: 350px;
+    height: 600px;
+    margin: 100px auto;
+    position: relative;
+    border: 5px solid #111;
+}
+/* Skapar en layout för produkt3 när den poppas upp på skärmen */
+#product3 .popup-content {
+    width: 350px;
+    height: 600px;
+    margin: 100px auto;
+    position: relative;
+    border: 5px solid #111;
+}
+/* Skapar en layout för produkt4 när den poppas upp på skärmen */
+#product4 .popup-content {
+    width: 350px;
+    height: 600px;
+    margin: 100px auto;
+    position: relative;
+    border: 5px solid #111;
+}
+/* Skapar en layout för min knapp som jag använder för att stänga mitt 
+popup fönster på produkten */
+.close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: #222;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    line-height: 0;
+    padding: 9px 0 11px;
+    width: 20px;
+    text-align: center;
+}
+
+  /* Skapar en layout för en kolumn */
+   .column {
+     flex-direction: column;
+     width: 200px;
+     margin-left: 30px;
+     margin-right: 400px;
+   }
+
+   /* Skapar en container som ska innehålla min kolumn */
+   .column-container {
+     display: flex;
+   }
+
+
+   /* Skapar en container för mina bilder */
+   .picture-container {
+       display: flex;
+       justify-content: space-around;
+   }
+
+   /* Skapar en ram för mina bilder */
+   .picture-frame {
+       width: 250px;
+       height: 400px;
+       margin-top: 20px;
+       border: solid;
+       border-color: #333
+   }
+
+ /* Skapar en container för min footer */
+  .footer-container
+  {
+      display: flex;
+      margin-top: 200px;
+      background-color: #333;
+      height: 250px;
+      justify-content: space-evenly;
+  }
+  /* Skapar en layout för min rubrik i footern */
+  .footer-heading {
+      color: white;
+      text-align: center;
+  }
+  /* Skapar en layout för en column jag använder i min footer */
+  .footer-column{
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+      width: 200px;
+      color: white;
+  }
+
+

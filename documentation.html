@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE-edge">
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!--Länkar till min style fil-->
+      <link rel="stylesheet" href="css/style.css">
+   </head>
+   <body>
+      <!--Lägger till en navbar på sidan, där jag använder mig av en lista
+         där varje sida i navbaren är ett li element-->
+      <ul>
+         <li><a href="index.html">Hem</a></li>
+         <li><a href="products.html">Produkter</a></li>
+         <li><a href="contacts.html">Kontakta Oss</a></li>
+         <li><a href="about.html">Om Oss</a></li>
+         <li><a class="active" href="documentation.html">Dokumentation</a></li>
+         <li><img src="css/images/shoppingcart1.png" style="width: 42px;"></li>
+      </ul>
+      <!--Lägger till en rubrik på sidan-->
+      <h1 class="heading"><u>Dokumentation</u></h1>
+      <!--Lägger till en underrubrik-->
+      <h2>Dessa problem har jag stött på:</h2>
+      <!--Skapar en lista med de problem jag stött på-->
+      <li style="margin-top: 10px;">Första problemet jag hade var att skapa en navbar på sidan.
+         Jag sökte runt på internet och kom fram till att det enklaste var att
+         skapa en lista där varje li element var en sida på navbaren. Jag ändrade
+         li elementet med "float: left;". Detta gör att listan blir horisontell.
+      </li>
+      <li style="margin-top: 10px;">
+         Andra problemet jag stötte på var ett litet slarvfel. Jag ville att
+         mina items skulle displayas som "justify-content: space-around;" men eftersom
+         att jag hade råkat sätta en margin-left på 400px så la sig mitt item för mycket till höger.
+      </li>
+      <li style="margin-top: 10px;">
+         Jag lärde mig även att man kunde sätta en bredd på sin container.
+         Vilket blev ett litet problem under min arbetsgång då min container tog
+         upp för mycket plats på min sida så att andra items inte fick plats.
+      </li>
+      <!--Lägger till en footer på sidan, varje item i containern är en ny 
+         rubrik med text-->
+      <div class="footer-container">
+         <div class="footer-column">
+            <h3 class="footer-heading"><u>Kontakta Oss</u></h3>
+            <h5>Du kan kontakta oss på mail: ALW.Foratag@gmail.com
+               Du kan även kontakta oss på Instagram, Facebook, Twitter där
+               vi heter ALWForetag.
+            </h5>
+         </div>
+         <div class="footer-column">
+            <h3 class="footer-heading"><u>Dokumentation</u></h3>
+            <h5>De problem jag har stött på under mitt arbete är att 
+               skapa en navbar, jag sökte runt lite och kom fram till att det enklaste
+               var att skapa en lista där varje tabb i navbaren var ett li element. 
+               Jag stötte även på ett till problem, vilket var ett litet slarvfel. Jag råkade
+               sätta en margin-left på 400px vilket gjorde att mitt item blev väldigt mycket till höger.
+            </h5>
+         </div>
+         <div class="footer-column">
+            <h3 class="footer-heading"><u>Om Oss</u></h3>
+            <h5>ALW är ett av de ledande klädesbutiker i Europa. Vårat företag
+               startade år 1989.Vi har över 12 000 anställda och vi har ett bra
+               arbetsklimat och schyssta arbetsvillkor. Vi på ALW jobbar ständigt 
+               med att bli mer miljövänliga och vi har minskat vårat klimatavtryck på 30% på 10 år.   
+            </h5>
+         </div>
+      </div>
+   </body>
+</html>

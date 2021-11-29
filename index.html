@@ -1,0 +1,120 @@
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE-edge">
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!--Länkar till min style fil-->
+      <link rel="stylesheet" href="css/style.css">
+   </head>
+   <body>
+      <!--Här lägger jag till en navbar med hjälp av en lista
+         där varje sida på navbaren är ett li element-->
+      <ul>
+         <li><a class="active" href="index.html">Hem</a></li>
+         <li><a href="products.html">Produkter</a></li>
+         <li><a href="contacts.html">Kontakta Oss</a></li>
+         <li><a href="about.html">Om Oss</a></li>
+         <li><a href="documentation.html">Dokumentation</a></li>
+         <li><img src="css/images/shoppingcart1.png" style="width: 42px;"></li>
+      </ul>
+      <h1><i class="fas fa-shopping-cart"></i></h1>
+      <!--Lägger till en rubrik på sidan-->
+      <h1 class="heading"><u>Våra bästsäljande produkter</u></h1>
+      <!--Skapar en container som innehåller mina produkter-->
+      <div class="popup-container">
+         <!--Skapar en produkt med ett id och 
+            när du klickar på den så poppar den upp-->
+         <a href="#product1" class="button">
+            <div class="product">
+               <img src="css/images/white-shirt.jpg" alt="Vit T-Shirt" width="600" height="400">
+               <div class="description">Vit T-Shirt - 199kr</div>
+         </a>
+         </div>
+         <!--Skapar en produkt med ett id och 
+            när du klickar på den så poppar den upp-->
+         <a href="#product2" class="button">
+            <div class="product">
+               <img src="css/images/jeans.jpg" alt="Vit T-Shirt" width="600" height="400">
+               <div class="description">Svarta Jeans - 299kr</div>
+         </a>
+         </div>
+         <!--Skapar en produkt med ett id och 
+            när du klickar på den så poppar den upp-->
+         <a href="#product3" class="button">
+            <div class="product">
+               <img src="css/images/chelseaboots.jpg" alt="Vit T-Shirt" width="600" height="400">
+               <div class="description">Chelsea Boots - 599kr</div>
+         </a>
+         </div>
+         <!--Skapar en produkt med ett id och 
+            när du klickar på den så poppar den upp-->
+         <a href="#product4" class="button">
+            <div class="product">
+               <img src="css/images/svart-skjorta.jpg" alt="Vit T-Shirt" width="600" height="400">
+               <div class="description">Svart Skjorta - 299kr</div>
+         </a>
+         </div>
+      </div>
+      <!--Skapar så att när man klickar på produkten med id "product1" 
+         så poppar den upp på skärmen-->
+      <div class="popup" id="product1">
+         <div class="popup-content">
+            <img src="css/images/white-shirt.jpg" style="width: 100%;">
+            <a href="#" class="close">x</a>
+         </div>
+      </div>
+      <!--Skapar så att när man klickar på produkten med id "product2" 
+         så poppar den upp på skärmen-->
+      <div class="popup" id="product2">
+         <div class="popup-content">
+            <img src="css/images/jeans.jpg" style="width: 100%;">
+            <a href="#" class="close">x</a>
+         </div>
+      </div>
+      <!--Skapar så att när man klickar på produkten med id "product3" 
+         så poppar den upp på skärmen-->
+      <div class="popup" id="product3">
+         <div class="popup-content">
+            <img src="css/images/chelseaboots.jpg" style="width: 100%;">
+            <a href="#" class="close">x</a>
+         </div>
+      </div>
+      <!--Skapar så att när man klickar på produkten med id "product4" 
+         så poppar den upp på skärmen-->
+      <div class="popup" id="product4">
+         <div class="popup-content">
+            <img src="css/images/svart-skjorta.jpg" style="width: 100%;">
+            <a href="#" class="close">x</a>
+         </div>
+      </div>
+      <!--Lägger till en footer på sidan, varje item i containern
+         är en ny rubrik med text-->
+      <div class="footer-container">
+         <div class="footer-column">
+            <h3 class="footer-heading"><u>Kontakta Oss</u></h3>
+            <h5>Du kan kontakta oss på mail: ALW.Foratag@gmail.com
+               Du kan även kontakta oss på Instagram, Facebook, Twitter där
+               vi heter ALWForetag.
+            </h5>
+         </div>
+         <div class="footer-column">
+            <h3 class="footer-heading"><u>Dokumentation</u></h3>
+            <h5>De problem jag har stött på under mitt arbete är att 
+               skapa en navbar, jag sökte runt lite och kom fram till att det enklaste
+               var att skapa en lista där varje tabb i navbaren var ett li element. 
+               Jag stötte även på ett till problem, vilket var ett litet slarvfel. Jag råkade
+               sätta en margin-left på 400px vilket gjorde att mitt item blev väldigt mycket till höger.
+            </h5>
+         </div>
+         <div class="footer-column">
+            <h3 class="footer-heading"><u>Om Oss</u></h3>
+            <h5>ALW är ett av de ledande klädesbutiker i Europa. Vårat företag
+               startade år 1989.Vi har över 12 000 anställda och vi har ett bra
+               arbetsklimat och schyssta arbetsvillkor. Vi på ALW jobbar ständigt 
+               med att bli mer miljövänliga och vi har minskat vårat klimatavtryck på 30% på 10 år.   
+            </h5>
+         </div>
+      </div>
+   </body>
+</html>
